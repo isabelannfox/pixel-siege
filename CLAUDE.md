@@ -6,6 +6,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Pixel Siege — a retro top-down shooter that runs entirely in the browser. Plain HTML/CSS/JS, no build tools, no package manager, no dependencies, no test suite.
 
+## Git workflow
+
+This project's only backup is git history on GitHub (`origin/main`, `isabelannfox/pixel-siege`) — there's no other saved state. Commit and push regularly as you work, not just at the end of a task:
+
+- Commit each logical change (a feature, a fix, a file added) as its own commit rather than batching unrelated work together.
+- Write clean commit messages: a concise summary line focused on *why*, plus body detail when the change isn't self-explanatory.
+- Push to `origin/main` right after committing so GitHub always reflects the latest local state and work is never sitting uncommitted/unpushed only on disk.
+
 ## Running it
 
 There is no build or dev-server step. Open `index.html` directly in a browser (double-click, or `start index.html` on Windows), or serve the folder with any static file server if you need it under `http://` instead of `file://`. There is no lint or test command — verification is manual in-browser play.
